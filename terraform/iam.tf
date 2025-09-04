@@ -1,6 +1,6 @@
 # IAM-Rolle für Lambda: erlaubt es, die Rolle von Lambda anzunehmen (AssumeRole).
 resource "aws_iam_role" "lambda_role" {
-  name = "slack-lambda-role"
+  name = "slack-lambda-role2.0"
 
   # Vertrauensbeziehung: Nur der Lambda-Service darf diese Rolle annehmen.
   assume_role_policy = jsonencode({
