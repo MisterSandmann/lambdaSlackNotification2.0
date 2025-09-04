@@ -1,3 +1,17 @@
-node_modules/
-function.zip
-.env
+# Terraform-Ordner & State
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform.lock.hcl
+
+# Aus dem archive_file erzeugt
+terraform/function.zip
+
+# Falls du tfvars mit Secrets nutzt, NICHT committen
+# terraform/terraform.tfvars
