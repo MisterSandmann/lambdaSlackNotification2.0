@@ -3,7 +3,7 @@
 # nutze source_dir statt source_file.
 data "archive_file" "lambda_zip" {
   type        = "zip"
-  source_file = var.lambda_source_file         # nimmt die index.js auf
+  source_file = local.lambda_source_file         # nimmt die index.js auf
   output_path = "${path.module}/function.zip"  # schreibt das ZIP neben die .tf-Dateien
 }
 

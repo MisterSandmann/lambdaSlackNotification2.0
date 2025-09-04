@@ -2,7 +2,7 @@
 variable "function_name" {
   description = "Name der Lambda Funktion"
   type        = string
-  default     = "slack-notify"
+  default     = "slack-notify-tf"
 }
 
 # Slack-Token als Variable (sensitiv). Wenn du das Slack-Thema gerade ausklammerst,
@@ -40,5 +40,4 @@ variable "lambda_memory" {
 variable "lambda_source_file" {
   description = "Pfad zur index.js"
   type        = string
-  default     = "${path.module}/../index.js"
 }
