@@ -2,7 +2,7 @@
 variable "function_name" {
   description = "Name der Lambda Funktion"
   type        = string
-  default     = "slack-notify-tf"
+  default     = ""
 }
 
 # Slack-Token als Variable (sensitiv). Wenn du das Slack-Thema gerade ausklammerst,
