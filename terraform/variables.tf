@@ -41,3 +41,8 @@ variable "lambda_source_file" {
   description = "Pfad zur index.js"
   type        = string
 }
+
+variable "region" {
+    description = "AWS Region, in der Ressourcen erstellt werden"
+    type        =  string 
+}
