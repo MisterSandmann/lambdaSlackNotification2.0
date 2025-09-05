@@ -20,7 +20,7 @@ terraform apply -auto-approve $PLAN_FILE
 
 # 4. Lambda-Infos auslesen
 FUNCTION_NAME=$(terraform output -raw lambda_name)
-REGION=$(terraform providers | grep aws | sed -n 's/.*region=\([^ ]*\).*/\1/p')
+REGION=$(terraform output -raw region)
 
 echo "✅ Deployment abgeschlossen"
 echo "Lambda-Funktion: $FUNCTION_NAME"
