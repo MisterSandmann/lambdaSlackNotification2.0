@@ -5,7 +5,7 @@ set -e  # Script bricht sofort ab, wenn ein Fehler auftritt
 TFVARS_FILE="terraform.tfvars"   # Variablen-Datei
 PLAN_FILE="plan.tfplan"          # gespeicherter Plan
 OUTPUT_FILE="out.json"           # Ergebnis vom Lambda-Test
-TEST_MESSAGE="Hey #testlambda, hier läuft alles automatisch!!! Mega!!! Und das nur, weil Max gerne Menschen quält :P!"
+TEST_MESSAGE="Hallo #testlambda, ich komme aus Lambda 🚀"
 
 echo "🚀 Starte Deployment..."
 
